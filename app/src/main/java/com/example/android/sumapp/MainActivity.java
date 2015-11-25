@@ -11,7 +11,7 @@ import android.widget.Toast;
 public class MainActivity extends ActionBarActivity {
 
     private EditText firstNumberEditText , secondNumberEditText;
-    private Button addButton;
+    private Button addButton, resetButton;
     private AddNumbers sumObject = new AddNumbers();
     private float firstNumber=0;
     private float secondNumber=0;
@@ -27,6 +27,7 @@ public class MainActivity extends ActionBarActivity {
         firstNumberEditText = (EditText) findViewById(R.id.firstNumberEditText);
         secondNumberEditText = (EditText) findViewById(R.id.secondNumberEditText);
         addButton = (Button) findViewById(R.id.addButton);
+        resetButton = (Button) findViewById(R.id.resetButton);
 
 
         addButton.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +44,16 @@ public class MainActivity extends ActionBarActivity {
 
             }
         });
+
+        resetButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                firstNumberEditText.setText("");
+                secondNumberEditText.setText("");
+            }
+        });
+
     }
 
 

@@ -7,6 +7,7 @@
     <string name="first_number_prompt">Enter first number: </string>
     <string name="second_number_prompt">Enter second number: </string>
     <string name="add_button_prompt">CLICK TO ADD</string>
+    <string name="reset_button_prompt">CLICK TO RESET</string>
     <string name="image_description">Sum icon</string>
 
 </resources>

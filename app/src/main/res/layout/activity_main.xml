@@ -58,7 +58,19 @@ android:textSize="16sp"
         android:text="@string/add_button_prompt"
         android:id="@+id/addButton"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="79dp"
+        android:background="@android:color/holo_green_light" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reset_button_prompt"
+        android:id="@+id/resetButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/holo_red_dark" />
 
 
 </RelativeLayout>
